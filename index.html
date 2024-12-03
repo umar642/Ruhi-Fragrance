@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home -- RUHI Fragrances</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>RUHI FRAGRANCE</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>Discover Your Signature Fragrance</h2>
+        <p>Luxury fragrances to elevate your senses</p>
+    </section>
+
+    <div class="container">
+        <section class="section" id="products">
+            <h2>Our Featured Fragrances</h2>
+            <div class="products">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300" alt="Fragrance 1">
+                    <h3>Elegance Bloom</h3>
+                    <p>A floral blend with notes of jasmine and rose.</p>
+                    <button class="add-to-cart">Add To Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300" alt="Fragrance 2">
+                    <h3>Mystic Woods</h3>
+                    <p>A woody scent with hints of sandalwood and amber.</p>
+                    <button class="add-to-cart">Add To Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300" alt="Fragrance 3">
+                    <h3>Ocean Breeze</h3>
+                    <p>A refreshing aroma inspired by the sea.</p>
+                    <button class="add-to-cart">Add To Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <h2>About Us</h2>
+            <p>At Elegance Scents, we believe in the power of fragrance to evoke memories and emotions. Each scent is crafted with precision and passion to deliver a luxurious experience.</p>
+        </section>
+
+        <section class="section" id="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions? Reach out to us via <a href="mailto:info@elegancescents.com">info@elegancescents.com</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; BY RUHI fragrances<br>Sign Up To Enjoy More Perfumes</p>
+    </footer>
+
+    <script>
+        // Select all 'Add To Cart' buttons
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+        // Add click event listeners to each button
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Change the button text to 'Added To Cart'
+                button.textContent = 'Added To Cart';
+                
+                // Optionally, change the button style to show it's been added
+                button.style.backgroundColor = '#e67e22';
+                button.style.cursor = 'not-allowed';
+                button.disabled = true; // Disable the button after it's clicked
+            });
+        });
+    </script>
+</body>
+
+</html>
